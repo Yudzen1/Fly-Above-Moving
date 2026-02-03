@@ -1,5 +1,71 @@
+/* Fly Above Moving — ORIGINAL light-blue design */
+:root{
+  --bg: #f6fbff;
+  --bg2:#eef7ff;
+  --card:#ffffff;
+  --text:#0b2239;
+  --muted:#4f6b84;
+  --line: rgba(11,34,57,.12);
+  --primary:#3aa7ff;
+  --primary2:#2b7fff;
+  --shadow: 0 18px 40px rgba(11,34,57,.10);
+  --radius: 18px;
+  --max: 1120px;
+  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
 
-body{font-family:Arial, sans-serif; margin:0; padding:20px; background:#f6fbff;}
-h1{color:#0b2239;}
-.pill{display:inline-block; background:#e6f3ff; padding:6px 10px; border-radius:999px;}
-section{margin:30px 0;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: var(--font);
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg), #ffffff 40%, var(--bg2));
+}
+
+a{color:inherit}
+img{max-width:100%; display:block}
+
+.container{max-width:var(--max); margin:0 auto; padding:0 18px}
+.skip{position:absolute; left:-999px; top:8px; padding:10px 12px; background:var(--card); border:1px solid var(--line); border-radius:12px;}
+.skip:focus{left:18px; z-index:9999}
+
+.topbar{position:sticky; top:0; z-index:50; backdrop-filter: blur(12px); background: rgba(246,251,255,.80); border-bottom:1px solid var(--line);}
+.topbar__inner{display:flex; align-items:center; justify-content:space-between; gap:14px; padding:12px 0;}
+.brand{display:flex; gap:10px; align-items:center; text-decoration:none}
+.brand__logo{width:44px; height:44px; border-radius:12px; object-fit:cover; box-shadow: 0 10px 22px rgba(11,34,57,.12); border:1px solid rgba(255,255,255,.6);}
+.brand__name{display:block; font-weight:800;}
+.brand__tag{display:block; font-size:12px; color:var(--muted); margin-top:2px}
+
+.nav{display:flex; gap:18px; align-items:center}
+.nav a{text-decoration:none; color:var(--muted); font-weight:600; font-size:14px; padding:10px; border-radius:12px;}
+.nav a:hover{background: rgba(58,167,255,.10); color:var(--text)}
+
+.topbar__cta{display:flex; gap:10px; align-items:center}
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:11px 14px; border-radius:14px; border:1px solid rgba(58,167,255,.22); background: linear-gradient(180deg, rgba(58,167,255,.18), rgba(58,167,255,.10)); color: var(--text); text-decoration:none; font-weight:800; box-shadow: 0 10px 24px rgba(11,34,57,.08);}
+.btn--ghost{background: transparent; border:1px solid var(--line); box-shadow:none;}
+.btn--lg{padding:13px 16px; border-radius:16px}
+.btn--full{width:100%}
+
+.hero{position:relative; overflow:hidden}
+.hero__bg{position:absolute; inset:0; background-image: linear-gradient(90deg, rgba(246,251,255,.95), rgba(246,251,255,.70) 45%, rgba(246,251,255,.55)), url("assets/hero.jpg"); background-size: cover; background-position: center;}
+.hero__inner{position:relative; padding:56px 0 34px; display:grid; grid-template-columns: 1fr;}
+.pill{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background: rgba(58,167,255,.14); border:1px solid rgba(58,167,255,.22); font-weight:800;}
+
+.section{padding:52px 0}
+.section--alt{background: linear-gradient(180deg, rgba(58,167,255,.08), rgba(58,167,255,.04))}
+
+.grid3{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; margin-top:18px;}
+.grid2{display:grid; grid-template-columns: repeat(2, 1fr); gap:14px; margin-top:18px;}
+
+.tile{background: rgba(255,255,255,.78); border:1px solid var(--line); border-radius: var(--radius); padding:18px; box-shadow: 0 12px 30px rgba(11,34,57,.06);}
+.check li{margin:8px 0}
+
+.mediaRow{margin-top:20px; display:grid; grid-template-columns: .95fr 1.05fr; gap:16px; align-items:center;}
+.mediaRow__img{border-radius: var(--radius); border:1px solid var(--line); box-shadow: var(--shadow);}
+.chip{padding:8px 10px; border-radius:999px; border:1px solid rgba(58,167,255,.20); background: rgba(58,167,255,.10); font-weight:800; font-size:12px;}
+
+.review{padding:18px; border-radius: var(--radius); border:1px solid var(--line); background: rgba(255,255,255,.78);}
+.review__stars{font-weight:900;}
+
+.callFab{position:fixed; right:16px; bottom:16px; padding:12px 14px; border-radius: 18px; text-decoration:none; border:1px solid rgba(58,167,255,.28); background: rgba(255,255,255,.9); box-shadow: 0 18px 44px rgba(11,34,57,.16);}

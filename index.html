@@ -20,62 +20,221 @@
           <span class="brand__tag">Move smarter. Move safer.</span>
         </span>
       </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="topbar__cta">
+        <a class="btn btn--ghost" href="tel:+18722510096" aria-label="Call Fly Above Moving">(+1 872-251-0096)</a>
+        <a class="btn" href="#contact">Get a quote</a>
+      </div>
+
+      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" hidden>
+      <div class="container mobileNav__inner">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn--full" href="tel:+18722510096">Call (+1 872-251-0096)</a>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" id="home">
-      <div class="container">
-        <p class="pill">Chicago area • Local Moving • 24/7</p>
-        <h1>Fast. Careful. Always Available.</h1>
-        <p>
-          Friendly crew, careful handling, clear pricing. From apartments to houses — we get you moved fast and safely.
-        </p>
-        <a href="tel:+18722510096">Call now</a>
+      <div class="hero__bg" role="img" aria-label="Moving team carrying furniture"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="pill">Chicago area • Local Moving • 24/7</p>
+          <h1>Moving that feels effortless.</h1>
+          <p class="sub">
+            Friendly crew, careful handling, clear pricing. From apartments to houses — we get you moved fast and safely.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--lg" href="tel:+18722510096">Call now</a>
+            <a class="btn btn--lg btn--ghost" href="#services">See services</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="services">
-      <h2>Services</h2>
-      <article>
-        <h3>Local Moving</h3>
-        <p>Homes, apartments, condos. Efficient routes and quick turnaround.</p>
-      </article>
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Services</h2>
+          <p>Local moving tailored to your situation.</p>
+        </div>
 
-      <article>
-        <h3>Same-Day Moves</h3>
-        <p>Need help today? We can usually arrive within hours.</p>
-      </article>
+        <div class="grid3">
+          <article class="tile">
+            <h3>Local Moving</h3>
+            <p>Homes, apartments, condos. Efficient routes and quick turnaround.</p>
+            <ul class="check">
+              <li>Loading & unloading</li>
+              <li>Furniture protection</li>
+              <li>Truck + crew options</li>
+            </ul>
+          </article>
 
-      <article>
-        <h3>Packing & Supplies</h3>
-        <p>We can pack fully or help with fragile items only.</p>
-      </article>
+          <article class="tile">
+            <h3>Same-Day Moves</h3>
+            <p>Need help today? We can usually arrive within hours.</p>
+            <ul class="check">
+              <li>Fast response</li>
+              <li>Professional wrapping</li>
+              <li>Safe transport</li>
+            </ul>
+          </article>
+
+          <article class="tile">
+            <h3>Packing & Supplies</h3>
+            <p>We can pack fully or help with fragile items only.</p>
+            <ul class="check">
+              <li>Boxes & wrap</li>
+              <li>TV / mirror protection</li>
+              <li>Disassembly & reassembly</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="mediaRow">
+          <img class="mediaRow__img" src="assets/info.jpg" alt="Moving boxes and workers" />
+          <div class="mediaRow__copy">
+            <h3>Careful handling, every time</h3>
+            <p>
+              We treat your home and belongings like they’re our own — clean equipment, floor protection,
+              and careful lifting techniques.
+            </p>
+            <div class="chips">
+              <span class="chip">Blankets & straps</span>
+              <span class="chip">Corner guards</span>
+              <span class="chip">Fast communication</span>
+              <span class="chip">On‑time arrival</span>
+            </div>
+            <div class="mediaRow__actions">
+              <a class="btn" href="#contact">Get a quote</a>
+              <a class="btn btn--ghost" href="tel:+18722510096">Call (+1 872-251-0096)</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="why-us">
-      <h2>Why choose us</h2>
-      <ul>
-        <li>Transparent pricing</li>
-        <li>Fast, friendly crew</li>
-        <li>Full protection & packing</li>
-        <li>24/7 availability</li>
-      </ul>
+    <section class="section section--alt" id="why-us">
+      <div class="container">
+        <div class="section__head">
+          <h2>Why choose us</h2>
+          <p>Simple: we show up, we communicate, and we protect your stuff.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="why">
+            <h3>Transparent pricing</h3>
+            <p>We explain what’s included and keep things straightforward — no surprises.</p>
+          </div>
+          <div class="why">
+            <h3>Fast, friendly crew</h3>
+            <p>Polite movers that work efficiently while staying careful with furniture and walls.</p>
+          </div>
+          <div class="why">
+            <h3>Protection & packing</h3>
+            <p>Wrap, straps, pads, and proper loading to reduce risk of damage.</p>
+          </div>
+          <div class="why">
+            <h3>24/7 availability</h3>
+            <p>We answer calls day or night.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="reviews">
-      <h2>Reviews</h2>
-      <p>“Showed up on time and finished fast.” — Alex</p>
-      <p>“Very careful with furniture.” — Maria</p>
-      <p>“Came same night when I needed help.” — Daniel</p>
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <h2>Reviews</h2>
+          <p>Examples of what customers usually tell us after the move.</p>
+        </div>
+
+        <div class="grid3">
+          <figure class="review">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>
+              “Showed up on time, wrapped everything, and finished way faster than I expected. No scratches on walls.”
+            </blockquote>
+            <figcaption>— Alex P., apartment move</figcaption>
+          </figure>
+
+          <figure class="review">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>
+              “Very careful with the couch and TV. Communication was clear and the price was fair.”
+            </blockquote>
+            <figcaption>— Maria S., house move</figcaption>
+          </figure>
+
+          <figure class="review">
+            <div class="review__stars">★★★★★</div>
+            <blockquote>
+              “Booked last minute and they still helped the same day. Super friendly crew.”
+            </blockquote>
+            <figcaption>— Daniel R., urgent move</figcaption>
+          </figure>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p><strong>Phone:</strong> (+1 872-251-0096)</p>
-      <p><strong>Hours:</strong> 24/7 — Always available</p>
-      <p><strong>Service area:</strong> Chicago & suburbs</p>
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p>Tell us your move date, addresses, and any heavy/fragile items — we’ll reply quickly.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Call / Text</h3>
+            <p class="big">
+              <a class="phone" href="tel:+18722510096">(+1 872-251-0096)</a>
+            </p>
+            <p class="muted">Tap to call on mobile. If you’re on desktop, it may open a calling app.</p>
+
+            <div class="hours">
+              <div><strong>Hours:</strong> 24/7 — Always available</div>
+              <div><strong>Service area:</strong> Chicago & suburbs</div>
+            </div>
+
+            <div class="mini">
+              <img src="assets/logo.jpg" alt="Fly Above Moving badge" />
+              <div>
+                <strong>Fly Above Moving</strong><br />
+                Careful moving • Fast quotes • Friendly crew
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p>© <span id="year"></span> Fly Above Moving. All rights reserved.</p>
+        </footer>
+      </div>
     </section>
   </main>
+
+  <a class="callFab" href="tel:+18722510096" aria-label="Call Fly Above Moving">
+    <span>Call</span>
+    <strong>(+1 872-251-0096)</strong>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
