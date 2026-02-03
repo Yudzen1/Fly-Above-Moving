@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fly Above Moving — Fast, Careful, Reliable Movers</title>
-  <meta name="description" content="Fly Above Moving — local moving in Chicago. Packing, loading, unloading. Call (+1 872-251-0096) for a free quote." />
+  <meta name="description" content="Fly Above Moving — local & long-distance moving. Packing, loading, unloading. Call (+1 872-251-0096) for a free quote." />
   <link rel="icon" href="assets/logo.jpg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -64,6 +64,49 @@
             <a class="btn btn--lg" href="tel:+18722510096">Call now</a>
             <a class="btn btn--lg btn--ghost" href="#services">See services</a>
           </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num">⭐ 4.9</div>
+              <div class="stat__label">Avg rating</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Same‑day</div>
+              <div class="stat__label">availability</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Care</div>
+              <div class="stat__label">first mindset</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="card">
+            <h2 class="card__title">Instant estimate</h2>
+            <p class="card__hint">Tell us what you’re moving — we’ll reply quickly.</p>
+
+            <form id="quickForm" class="form" novalidate>
+              <label>
+                <span>Name</span>
+                <input name="name" type="text" autocomplete="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Phone</span>
+                <input name="phone" type="tel" autocomplete="tel" placeholder="(###) ###‑####" required />
+              </label>
+              <label>
+                <span>Move details</span>
+                <textarea name="details" rows="3" placeholder="Apartment size, stairs/elevator, distance, preferred date…" required></textarea>
+              </label>
+
+              <button class="btn btn--full" type="submit">Request a quote</button>
+              <p class="form__fine">
+                Prefer calling? <a href="tel:+18722510096">(+1 872-251-0096)</a>
+              </p>
+              <p class="form__msg" id="quickMsg" aria-live="polite"></p>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -72,7 +115,7 @@
       <div class="container">
         <div class="section__head">
           <h2>Services</h2>
-          <p>Local moving tailored to your situation.</p>
+          <p>Pick what you need — we’ll tailor the move to your situation.</p>
         </div>
 
         <div class="grid3">
@@ -87,12 +130,12 @@
           </article>
 
           <article class="tile">
-            <h3>Same-Day Moves</h3>
-            <p>Need help today? We can usually arrive within hours.</p>
+            <h3>Same‑Day Moves</h3>
+            <p>Need help today? We can often arrive within hours — just call or send details.</p>
             <ul class="check">
               <li>Fast response</li>
-              <li>Professional wrapping</li>
-              <li>Safe transport</li>
+              <li>Careful wrapping</li>
+              <li>Safe loading & unloading</li>
             </ul>
           </article>
 
@@ -151,8 +194,19 @@
             <p>Wrap, straps, pads, and proper loading to reduce risk of damage.</p>
           </div>
           <div class="why">
-            <h3>24/7 availability</h3>
-            <p>We answer calls day or night.</p>
+            <h3>Clear communication</h3>
+            <p>Quick replies, schedule confirmations, and updates on move day.</p>
+          </div>
+        </div>
+
+        <div class="ctaBand">
+          <div>
+            <h3>Ready to move?</h3>
+            <p>Call or send details — we’ll get back quickly with a quote.</p>
+          </div>
+          <div class="ctaBand__actions">
+            <a class="btn btn--lg" href="tel:+18722510096">Call (+1 872-251-0096)</a>
+            <a class="btn btn--lg btn--ghost" href="#contact">Message us</a>
           </div>
         </div>
       </div>
@@ -167,7 +221,7 @@
 
         <div class="grid3">
           <figure class="review">
-            <div class="review__stars">★★★★★</div>
+            <div class="review__stars" aria-label="5 stars">★★★★★</div>
             <blockquote>
               “Showed up on time, wrapped everything, and finished way faster than I expected. No scratches on walls.”
             </blockquote>
@@ -175,7 +229,7 @@
           </figure>
 
           <figure class="review">
-            <div class="review__stars">★★★★★</div>
+            <div class="review__stars" aria-label="5 stars">★★★★★</div>
             <blockquote>
               “Very careful with the couch and TV. Communication was clear and the price was fair.”
             </blockquote>
@@ -183,12 +237,37 @@
           </figure>
 
           <figure class="review">
-            <div class="review__stars">★★★★★</div>
+            <div class="review__stars" aria-label="5 stars">★★★★★</div>
             <blockquote>
               “Booked last minute and they still helped the same day. Super friendly crew.”
             </blockquote>
             <figcaption>— Daniel R., urgent move</figcaption>
           </figure>
+        </div>
+
+        <div class="card card--soft">
+          <h3>Leave a message / review</h3>
+          <p class="muted">This form won’t publish online by itself (no backend). It will open your email app with your message.</p>
+
+          <form id="reviewForm" class="form form--two" novalidate>
+            <label>
+              <span>Your name</span>
+              <input name="rname" type="text" placeholder="Name" required />
+            </label>
+            <label>
+              <span>Rating</span>
+              <select name="rating" required>
+                <option value="" selected disabled>Select</option>
+                <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+              </select>
+            </label>
+            <label class="span2">
+              <span>Message</span>
+              <textarea name="rmsg" rows="3" placeholder="Write your feedback…" required></textarea>
+            </label>
+            <button class="btn span2" type="submit">Send feedback</button>
+            <p class="form__msg span2" id="reviewMsg" aria-live="polite"></p>
+          </form>
         </div>
       </div>
     </section>
@@ -221,10 +300,39 @@
               </div>
             </div>
           </div>
+
+          <div class="card">
+            <h3>Message us</h3>
+            <form id="contactForm" class="form" novalidate>
+              <label>
+                <span>Name</span>
+                <input name="cname" type="text" autocomplete="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Phone</span>
+                <input name="cphone" type="tel" autocomplete="tel" placeholder="(###) ###‑####" required />
+              </label>
+              <label>
+                <span>Pickup → Dropoff</span>
+                <input name="route" type="text" placeholder="E.g., Buffalo Grove → Evanston" required />
+              </label>
+              <label>
+                <span>Details</span>
+                <textarea name="cdetails" rows="4" placeholder="Bedrooms, stairs/elevator, large items, preferred date…" required></textarea>
+              </label>
+
+              <button class="btn btn--full" type="submit">Send request</button>
+              <p class="form__msg" id="contactMsg" aria-live="polite"></p>
+            </form>
+          </div>
         </div>
 
         <footer class="footer">
           <p>© <span id="year"></span> Fly Above Moving. All rights reserved.</p>
+          <div class="footer__links">
+            <a href="#home">Top</a>
+            <a href="tel:+18722510096">Call</a>
+          </div>
         </footer>
       </div>
     </section>
