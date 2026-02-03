@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fly Above Moving — Fast, Careful, Reliable Movers</title>
+  <meta name="description" content="Fly Above Moving — local & long-distance moving. Packing, loading, unloading. Call (+1 872-251-0096) for a free quote." />
+  <link rel="icon" href="assets/logo.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#home" aria-label="Fly Above Moving home">
+        <img class="brand__logo" src="assets/logo.jpg" alt="Fly Above Moving logo" />
+        <span class="brand__text">
+          <span class="brand__name">Fly Above Moving</span>
+          <span class="brand__tag">Move smarter. Move safer.</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="topbar__cta">
+        <a class="btn btn--ghost" href="tel:+18722510096" aria-label="Call Fly Above Moving">(+1 872-251-0096)</a>
+        <a class="btn" href="#contact">Get a quote</a>
+      </div>
+
+      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" hidden>
+      <div class="container mobileNav__inner">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn--full" href="tel:+18722510096">Call (+1 872-251-0096)</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero__bg" role="img" aria-label="Moving team carrying furniture"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="pill">Chicago area • Local & Long‑Distance</p>
+          <h1>Moving that feels effortless.</h1>
+          <p class="sub">
+            Friendly crew, careful handling, clear pricing. From apartments to houses — we get you moved fast and safely.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--lg" href="tel:+18722510096">Call now</a>
+            <a class="btn btn--lg btn--ghost" href="#services">See services</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num">⭐ 4.9</div>
+              <div class="stat__label">Avg rating</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Same‑day</div>
+              <div class="stat__label">availability</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Care</div>
+              <div class="stat__label">first mindset</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="card">
+            <h2 class="card__title">Instant estimate</h2>
+            <p class="card__hint">Tell us what you’re moving — we’ll reply quickly.</p>
+
+            <form id="quickForm" class="form" novalidate>
+              <label>
+                <span>Name</span>
+                <input name="name" type="text" autocomplete="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Phone</span>
+                <input name="phone" type="tel" autocomplete="tel" placeholder="(###) ###‑####" required />
+              </label>
+              <label>
+                <span>Move details</span>
+                <textarea name="details" rows="3" placeholder="Apartment size, stairs/elevator, distance, preferred date…" required></textarea>
+              </label>
+
+              <button class="btn btn--full" type="submit">Request a quote</button>
+              <p class="form__fine">
+                Prefer calling? <a href="tel:+18722510096">(+1 872-251-0096)</a>
+              </p>
+              <p class="form__msg" id="quickMsg" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Services</h2>
+          <p>Pick what you need — we’ll tailor the move to your situation.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="tile">
+            <h3>Local Moving</h3>
+            <p>Homes, apartments, condos. Efficient routes and quick turnaround.</p>
+            <ul class="check">
+              <li>Loading & unloading</li>
+              <li>Furniture protection</li>
+              <li>Truck + crew options</li>
+            </ul>
+          </article>
+
+          <article class="tile">
+            <h3>Long‑Distance</h3>
+            <p>Clear coordination, careful packing, and reliable delivery timelines.</p>
+            <ul class="check">
+              <li>Planned scheduling</li>
+              <li>Itemized inventory</li>
+              <li>Updates along the way</li>
+            </ul>
+          </article>
+
+          <article class="tile">
+            <h3>Packing & Supplies</h3>
+            <p>We can pack fully or help with fragile items only.</p>
+            <ul class="check">
+              <li>Boxes & wrap</li>
+              <li>TV / mirror protection</li>
+              <li>Disassembly & reassembly</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="mediaRow">
+          <img class="mediaRow__img" src="assets/info.jpg" alt="Moving boxes and workers" />
+          <div class="mediaRow__copy">
+            <h3>Careful handling, every time</h3>
+            <p>
+              We treat your home and belongings like they’re our own — clean equipment, floor protection,
+              and careful lifting techniques.
+            </p>
+            <div class="chips">
+              <span class="chip">Blankets & straps</span>
+              <span class="chip">Corner guards</span>
+              <span class="chip">Fast communication</span>
+              <span class="chip">On‑time arrival</span>
+            </div>
+            <div class="mediaRow__actions">
+              <a class="btn" href="#contact">Get a quote</a>
+              <a class="btn btn--ghost" href="tel:+18722510096">Call (+1 872-251-0096)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="why-us">
+      <div class="container">
+        <div class="section__head">
+          <h2>Why choose us</h2>
+          <p>Simple: we show up, we communicate, and we protect your stuff.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="why">
+            <h3>Transparent pricing</h3>
+            <p>We explain what’s included and keep things straightforward — no surprises.</p>
+          </div>
+          <div class="why">
+            <h3>Fast, friendly crew</h3>
+            <p>Polite movers that work efficiently while staying careful with furniture and walls.</p>
+          </div>
+          <div class="why">
+            <h3>Protection & packing</h3>
+            <p>Wrap, straps, pads, and proper loading to reduce risk of damage.</p>
+          </div>
+          <div class="why">
+            <h3>Clear communication</h3>
+            <p>Quick replies, schedule confirmations, and updates on move day.</p>
+          </div>
+        </div>
+
+        <div class="ctaBand">
+          <div>
+            <h3>Ready to move?</h3>
+            <p>Call or send details — we’ll get back quickly with a quote.</p>
+          </div>
+          <div class="ctaBand__actions">
+            <a class="btn btn--lg" href="tel:+18722510096">Call (+1 872-251-0096)</a>
+            <a class="btn btn--lg btn--ghost" href="#contact">Message us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <h2>Reviews</h2>
+          <p>Examples of what customers usually tell us after the move.</p>
+        </div>
+
+        <div class="grid3">
+          <figure class="review">
+            <div class="review__stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>
+              “Showed up on time, wrapped everything, and finished way faster than I expected. No scratches on walls.”
+            </blockquote>
+            <figcaption>— Alex P., apartment move</figcaption>
+          </figure>
+
+          <figure class="review">
+            <div class="review__stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>
+              “Very careful with the couch and TV. Communication was clear and the price was fair.”
+            </blockquote>
+            <figcaption>— Maria S., house move</figcaption>
+          </figure>
+
+          <figure class="review">
+            <div class="review__stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>
+              “Booked last minute and they still helped the same day. Super friendly crew.”
+            </blockquote>
+            <figcaption>— Daniel R., urgent move</figcaption>
+          </figure>
+        </div>
+
+        <div class="card card--soft">
+          <h3>Leave a message / review</h3>
+          <p class="muted">This form won’t publish online by itself (no backend). It will open your email app with your message.</p>
+
+          <form id="reviewForm" class="form form--two" novalidate>
+            <label>
+              <span>Your name</span>
+              <input name="rname" type="text" placeholder="Name" required />
+            </label>
+            <label>
+              <span>Rating</span>
+              <select name="rating" required>
+                <option value="" selected disabled>Select</option>
+                <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+              </select>
+            </label>
+            <label class="span2">
+              <span>Message</span>
+              <textarea name="rmsg" rows="3" placeholder="Write your feedback…" required></textarea>
+            </label>
+            <button class="btn span2" type="submit">Send feedback</button>
+            <p class="form__msg span2" id="reviewMsg" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p>Tell us your move date, addresses, and any heavy/fragile items — we’ll reply quickly.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Call / Text</h3>
+            <p class="big">
+              <a class="phone" href="tel:+18722510096">(+1 872-251-0096)</a>
+            </p>
+            <p class="muted">Tap to call on mobile. If you’re on desktop, it may open a calling app.</p>
+
+            <div class="hours">
+              <div><strong>Hours:</strong> 8:00 AM – 8:00 PM</div>
+              <div><strong>Service area:</strong> Chicago & suburbs + long‑distance</div>
+            </div>
+
+            <div class="mini">
+              <img src="assets/logo.jpg" alt="Fly Above Moving badge" />
+              <div>
+                <strong>Fly Above Moving</strong><br />
+                Careful moving • Fast quotes • Friendly crew
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Message us</h3>
+            <form id="contactForm" class="form" novalidate>
+              <label>
+                <span>Name</span>
+                <input name="cname" type="text" autocomplete="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Phone</span>
+                <input name="cphone" type="tel" autocomplete="tel" placeholder="(###) ###‑####" required />
+              </label>
+              <label>
+                <span>Pickup → Dropoff</span>
+                <input name="route" type="text" placeholder="E.g., Buffalo Grove → Evanston" required />
+              </label>
+              <label>
+                <span>Details</span>
+                <textarea name="cdetails" rows="4" placeholder="Bedrooms, stairs/elevator, large items, preferred date…" required></textarea>
+              </label>
+
+              <button class="btn btn--full" type="submit">Send request</button>
+              <p class="form__msg" id="contactMsg" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p>© <span id="year"></span> Fly Above Moving. All rights reserved.</p>
+          <div class="footer__links">
+            <a href="#home">Top</a>
+            <a href="tel:+18722510096">Call</a>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <a class="callFab" href="tel:+18722510096" aria-label="Call Fly Above Moving">
+    <span>Call</span>
+    <strong>(+1 872-251-0096)</strong>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
